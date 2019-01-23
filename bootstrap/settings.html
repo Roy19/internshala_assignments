@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LifeStyle Stores</title>
+		<!-- link to Bootstrap minified css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- link to Jquery minified-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- link to Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- link to external CSS -->
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+		<nav class="nav navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavBar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">LifeStyle Stores</a>
+				</div>
+				<div class="collapse navbar-collapse" id="mynavBar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Settings</a></li>
+						<li><a href="logout.html"><span class="glyphicon glyphicon-log-out"> Logout</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container panel-margin">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2 class="panel-title">Change Password</h2>
+				</div>
+				<div class="panel-body">
+					<form>
+						<div class="form-group">
+							<input type="password" class="form-control" name="name" placeholder="Old Password" required>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" name="email" placeholder="New Password" required>
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" name="password" placeholder="Re-type New Password" required>
+						</div>
+						<button type="submit" class="btn btn-primary">Change</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				Copyright <span class="glyphicon glyphicon-copyright-mark"></span> LifeStyle Stores.
+				All Rights Reserved | Contact Us: +91 90000 00000
+			</div>
+		</footer>
+	</body>
+</html>
