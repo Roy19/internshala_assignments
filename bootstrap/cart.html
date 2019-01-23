@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Cart</title>
+        <!-- link to Bootstrap minified css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- link to Jquery minified-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- link to Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- link to fontawesome CSS-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- link to external CSS -->
+		<link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <nav class="nav navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavBar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">LifeStyle Stores</a>
+				</div>
+				<div class="collapse navbar-collapse" id="mynavBar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+						<li><a href="settings.html"><span class="glyphicon glyphicon-user"></span> Settings</a></li>
+						<li><a href="logout.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+					</ul>
+				</div>
+			</div>
+        </nav>
+        <div class="container panel-margin">
+            <table class="table table-hover">
+                <tr>
+                    <th>Item Number</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Watch</td>
+                    <td>0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Total: <i class="fa fa-rupee"></i> 0</td>
+                    <td><a href="success.html" class="btn btn-primary">Confirm Order</a></td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+			<div class="container">
+				Copyright <span class="glyphicon glyphicon-copyright-mark"></span> LifeStyle Stores.
+				All Rights Reserved | Contact Us: +91 90000 00000
+			</div>
+		</footer>
+    </body>
+</html>
