@@ -1,11 +1,11 @@
 CREATE DATABASE store;
 
-CREATE TABLE items(
+CREATE TABLE store.items(
     id INT(11) PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     price INT(11) NOT NULL);
 
-CREATE TABLE users(
+CREATE TABLE store.users(
     id INT(11) PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
@@ -14,11 +14,11 @@ CREATE TABLE users(
     city VARCHAR(255) NOT NULL,
     address VARCHAR(255) NOT NULL);
 
-CREATE TABLE users_items(
+CREATE TABLE store.users_items(
     id INT(11) PRIMARY KEY AUTO_INCREMENT,
     user_id INT(11) NOT NULL,
     item_id INT(11) NOT NULL,
     status enum('Added to cart', 'Confirmed') NOT NULL,
-    FOREIGN KEY(user_id) REFERENCES users(id),
-    FOREIGN KEY (item_id) REFERENCES items(id));
+    FOREIGN KEY(user_id) REFERENCES users(id) ON UPDATE CASCADE,
+   	FOREIGN KEY(item_id) REFERENCES items(id) ON UPDATE CASCADE);
 
