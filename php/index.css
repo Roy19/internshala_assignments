@@ -1,0 +1,34 @@
+#banner-image {
+	padding-top: 75px;
+	padding-bottom: 50px;
+	text-align: center;
+	color: #f8f8f8;
+	background: url("images/intro-bg_1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+#banner_content {
+	position: relative;
+	padding-top: 6%;
+	padding-bottom: 6%;
+	margin: 12% auto;
+	background-color: rgba(0, 0, 0, 0.7);
+	max-width: 660px;
+}
+footer {
+	position: fixed;
+	padding: 10px 0;
+	text-align: center;
+	bottom: 0;
+	background-color: #101010;
+	color: #9d9d9d;
+	width: 100%;
+}
+.panel-margin {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.text-centre {
+	text-align: center;
+}
